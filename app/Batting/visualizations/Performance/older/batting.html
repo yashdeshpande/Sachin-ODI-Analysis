@@ -1,0 +1,79 @@
+	<div class="container" id="gridvisualizations" ng-controller="gridController">
+	<h1>General Statistics</h1>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div >
+	        		<div id="grid1" ui-grid="gridOptions" class="grid"></div>
+	      		</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 gridStat">
+				
+				<div ng-model="totalMatches">
+					<h1>{{totalMatches}}</h1>
+				</div>
+				<div>
+					<h2>Total Matches</h2>
+				</div>
+				
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 gridStat">
+				
+				<div ng-model="halfCenturies">
+					<h1>{{notOuts}}</h1>
+				</div>
+				<div>
+					<h2>Not Out Occurrences</h2>
+				</div>
+				
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 gridStat">
+				
+					<div ng-model="totalRuns">
+						<h1>{{totalRuns}}</h1>
+					</div>
+					<div>
+						<h2>Total Runs</h2>
+					</div>
+				
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 gridStat">
+				
+					<div ng-model="runRate">
+						<h1>{{runRate}}</h1>
+					</div>
+					<div >
+						<h2>Run Rate</h2>
+					</div>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 gridStat">
+				
+				<div ng-model="centuries">
+					<h1>{{centuries}}</h1>
+				</div>
+				<div>
+					<h2>Centuries</h2>
+				</div>
+				
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 gridStat">
+				
+				<div ng-model="halfCenturies">
+					<h1>{{ducks}}</h1>
+				</div>
+				<div>
+					<h2>Ducks</h2>
+				</div>
+				
+			</div>
+		</div>
+
+
+	</div>
+
+	<div>
+		
+
+	</div>

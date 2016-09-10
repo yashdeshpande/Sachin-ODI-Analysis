@@ -1,0 +1,116 @@
+	<div class="container" du-smooth-scroll du-scrollspy id="battinggridvisualizations" ng-controller="battingGridController">
+	<div class="row analysisHeader">
+		<h1>Batting Statistics</h1>
+	</div>
+	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div >
+	        		<div id="grid1" ui-grid="gridOptions" class="grid"></div>
+	      		</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="row analysisHeader">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Sachin Not Out*</h1>
+		</div>
+	</div>
+
+	<div class="row" ng-controller="notOutController">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+			<nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+			<div class="row">
+				<h3>India has a {{data["0"].children["0"].size}}% win rate with Sachin standing not out throughout the innings.</h3>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="row analysisHeader">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Spotlight</h1>
+		</div>
+	</div>
+
+	<div class="row" ng-controller="manOfTheMatchVisualizationController">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<nvd3 options="options" data="data"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="row ">
+				<h3>Sachin has won {{data["0"].values["0"].value}} Man of the Match awards in his {{totalInnings}} ODI matches, he holds the record for this.</h3>
+			</div>
+			
+		</div>
+	</div>
+
+
+		<div class="row analysisHeader">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Consistency</h1>
+		</div>
+	</div>
+
+	<div class="row ">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="battingInningsResultController">
+			<nvd3 options="options" data="data"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+			<div class="row">
+				<h3>This graph shows Sachin's Run Rate by Innings and Match Result, his averages are off the carts for each .</h3>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div class="row analysisHeader">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Sachin Century Impact</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="centuryWinsController">
+			<nvd3 options="options" data="data"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+			<div class="row">
+				<h3>A commonly believed myth is that India loses when Sachin scores a century.</h3>
+			</div>
+			<div class="row">
+				<h3>
+				India has won 33 times out of his 49 ODI centuries. Thats a 67% success rate.
+				</h3>
+			</div>
+			
+		</div>
+	</div>
+
+		<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Sachin's Contribution to India's Score</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="contributionVisualization">
+			<nvd3 options="options" data="data"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="row">
+				<h3>Sachin contributes to 22% of India's score on an average when India wins.</h3>
+			</div>
+			<div class="row">
+				<h3>
+				We can see a heavy contribution when India has won. In addition to this, Sachin has performed well even when the Indian batting line up has crumbled, his highest contribution of 76.8% has been in a match that India lost.
+				</h3>
+			</div>
+			
+		</div>
+	</div>
+

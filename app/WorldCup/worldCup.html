@@ -1,0 +1,79 @@
+	<div id="worldcupgridvisualizations" class="row analysisHeader">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Total Score in a World Cup</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="highestWorldCupRunsCtrl">
+			<nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="performanceVisualizationCtrl">
+			<div class="row">
+				<h3>Sachin is the current record holder for the highest cummulative runs in a World Cup by 535 runs.</h3>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row analysisHeader">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Most 50+ Run Occurences</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="50PlusWorldCupCtrl">
+			<nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="performanceVisualizationCtrl">
+			<div class="row">
+				<h3>Sachin is the current record holder for the most number of 50+ scores in World Cups.</h3>
+			</div>
+		</div>
+	</div>
+	<div class="row analysisHeader">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>World Cup Centuries</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="centuriesWorldCupCtrl">
+			<nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="performanceVisualizationCtrl">
+			<div class="row">
+				<h3>In addition to that, Sachin is also the current record holder for the most number of centuries in World Cups and a single world cup (673 runs)</h3>
+			</div>
+		</div>
+	</div>
+		<div class="row analysisHeader">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Performance: Sachin vs India in World Cups</h1>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="battingAvgWorldCupCtrl">
+			<nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="performanceVisualizationCtrl">
+			<div class="row">
+				<h3>India @ 1996: Semi-Finalists</h3>
+			</div>
+			<div class="row">
+				<h3>India @ 1999: 7th Position</h3>
+			</div>
+			<div class="row">
+				<h3>India @ 2003: Finalists</h3>
+			</div>
+			<div class="row">
+				<h3>India @ 2007: Eliminated at the Group Stage</h3>
+			</div>
+			<div class="row">
+				<h3>India @ 2011: Champions</h3>
+			</div>
+			<div>
+				<h3>There is a direct co-relation between Sachin's performance and India's world cup performance.</h3>
+			</div>
+		</div>
+	</div>
+	

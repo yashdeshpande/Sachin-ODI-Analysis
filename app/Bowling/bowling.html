@@ -1,0 +1,53 @@
+	<div class="container" du-smooth-scroll du-scrollspy id="bowlinggridvisualizations" ng-controller="bowlingGridController">
+	<div class="row analysisHeader">
+		<h1>Bowling Statistics</h1>
+	</div>
+	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div >
+	        		<div id="bowlingGrid" ui-grid="gridOptions" class="grid"></div>
+	      		</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 analysisHeader">
+			<h1>Wickets YoY</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="wicketGrowthCtrl">
+			<nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="wicketGrowthCtrl">
+			<div class="row">
+				<h3>Considering the fact that he was a part time bowler, this are acceptable bowling statistics</h3>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 analysisHeader">
+			<h1>Great Bowling Performances </h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="fivePlusWicketCtrl">
+			<nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="performanceVisualizationCtrl">
+			<div class="row">
+				<h3>In my opinion, Sachin's best bowling performance has been in 1993, <a href="http://www.espncricinfo.com/ci/engine/current/match/65971.html">when he defended 6 runs needed in the last over against South Africa.</a></h3>
+			</div>
+			<div class="row">
+				<h3>The others include a <a href="http://www.espncricinfo.com/ci/engine/current/match/66137.html">(5-32) against Australia in Kochi,1998</a> and a <a href="http://www.espncricinfo.com/ci/engine/current/match/64938.html">(5-50) against Pakistan in Kochi,2005</a>.</h3>
+			</div>
+		</div>
+	</div>
+	
+
+	

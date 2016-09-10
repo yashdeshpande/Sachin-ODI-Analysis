@@ -1,0 +1,51 @@
+	<div class="container" id="gridvisualizations" ng-controller="fieldingGridController">
+	<div class="row analysisHeader">
+		<h1>Fielding Statistics</h1>
+	</div>
+	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div >
+	        		<div id="grid1" ui-grid="gridOptions" class="grid"></div>
+	      		</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 analysisHeader">
+			<h1>Performance</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="performanceVisualizationCtrl">
+			<iframe width="450" height="255" src="https://www.youtube.com/embed/kdGhN8dauws" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 analysisHeader" ng-controller="performanceVisualizationCtrl">
+			<div class="row">
+				<h3>Sachin has shown great exhibits of fielding.</h3>
+			</div>
+			
+		</div>
+	</div>
+	
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 analysisHeader">
+			<h1>Dismissals per Innings</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-controller="dismissalPerInningsCtrl">
+			<nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+		</div>
+		<!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-controller="performanceVisualizationCtrl">
+			<div class="row">
+				<h3>Sachin has taken most of his catches against Australia</h3>
+			</div>
+			
+		</div> -->
+	</div>
+	
+	

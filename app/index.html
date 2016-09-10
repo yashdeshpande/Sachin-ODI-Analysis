@@ -1,43 +1,171 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" ng-app="careerAnalysisApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="careerAnalysisApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="careerAnalysisApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="careerAnalysisApp" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>Sachin Tendulkar</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Indie+Flower|Poiret+One|Raleway|Roboto+Slab|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="bower_components/angular-ui-grid/ui-grid.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+  <link rel="stylesheet" type="text/css" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
-  <div ng-view></div>
+    <!-- Header -->
+<!--     <header id="top" class="header">
+        <div class="introText">
+            <h1>Sachin Tendulkar</h1>
+            <h3>Free Bootstrap Themes &amp; Templates</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Analysis</a>
+        </div>
+    </header> -->
 
-  <div>Angular seed app: v<span app-version></span></div>
+    <aside class="tendulkarHomePageImageContainer">
+        <div class="tendulkarHomePage">
+            <h1>Sachin Tendulkar</h1>
+        </div>
+    </aside>
 
-  <!-- In production use:
+    <!-- About -->
+    <section id="careerAnalysis" class="careerAnaysisPanel">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <h1>Career Analysis</h1>
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+        <!-- Callout -->
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <div ng-controller="analysisPanelController">
+    <div>
+      <div class="fullWidth" padding-when-at-top="0" set-class-when-at-top="fix-to-top">
+    <section id="navigationPanel"  class="navigationPanel" >
+        <div  class="container navHeightAuto">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="row" du-scrollspy="navigationPanelScrollSpy">
+                    <div id="navSelect" du-smooth-scroll ng-click="activeView=views[0]; toAnalysisPanel()" href="#battinggridvisualizations">
+                        <div class="col-md-3 col-sm-6 navigationPanel-item">
+                                <object type ="image/svg+xml" data="img/batting.svg"></object>
+                                <h4>
+                                    <strong>Batting Analysis</strong>
+                                </h4>
+                        </div>
+                        </div>
+                        <div id="navSelect" ng-click="activeView=views[1]; toAnalysisPanel()" href="#bowlinggridvisualizations">
+                        <div class="col-md-3 col-sm-6 navigationPanel-item">
+                                <object type ="image/svg+xml" data="img/bowingIcon.svg"></object>
+                                <h4>
+                                    <strong>Bowling Analysis</strong>
+                                </h4>
+                        </div>
+                        </div>
+                        <div id="navSelect" ng-click="activeView=views[2]; toAnalysisPanel()" href="#fieldinggridvisualizations">
+                        <div class="col-md-3 col-sm-6 navigationPanel-item">
+                            
+                                <object type ="image/svg+xml" data="img/fielding.svg"></object>
+                                <h4>
+                                    <strong>Fielding Analysis</strong>
+                                </h4>
+                            
+                        </div>
+                        </div>
+                        <div id="navSelect" ng-click="activeView=views[3]; toAnalysisPanel()" href="#worldcugridvisualizations">
+                        <div class="col-md-3 col-sm-6 navigationPanel-item">
+                            
+                                <object type ="image/svg+xml" data="img/worldCup.svg"></object>
+                                <h4>
+                                    <strong>World Cup Analysis</strong>
+                                </h4>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      
+    </section>
+    <!--Analysis Panel-->
+    </div>
+    </div>  
+    <section id = "analysisPanel">
+    <div class="container" ng-model="activeView">
+      <div du-smooth-scroll ng-include="activeView.url">
+          <!--Batting/Bowling/Fielding/WorldCup-->
+      </div>
+      
+    </div>
+    </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h1>
+                    Sachin Tendulkar has been an inspiration, and is definitely a great cricketer. 
+                    </h1>
+                    <br>
+                    <hr class="small">
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+
+
+      <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  <script src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src='bower_components/jquery/dist/jquery.min.js'></script>
+  <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src='bower_components/angular-scroll/angular-scroll.min.js'></script>
+  <script type="text/javascript" src='bower_components/angular-ui-grid/ui-grid.js'></script>
+  <script src="bower_components/d3/d3.js"></script>
+  <script src="bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+  <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+  <script type="text/javascript" src="Batting/visualizations/battingVisualizations.js"></script>
+  <script type="text/javascript" src="Bowling/visualizations/bowlingVisualizations.js"></script>
+  <script type="text/javascript" src="Fielding/visualizations/fieldingVisualizations.js"></script>
+  <script type="text/javascript" src="WorldCup/visualizations/worldCupVisualizations.js"></script>
+  <script src="Batting/batting.js"></script>
+  <script src="Bowling/bowling.js"></script>
+  <script src="WorldCup/worldCup.js"></script>
+  <script src="Fielding/fielding.js"></script>
   <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+
 </body>
 </html>
