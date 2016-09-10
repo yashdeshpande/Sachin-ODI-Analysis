@@ -231,28 +231,3 @@ angular.module('careerAnalysisApp.worldCup.visualizations',[
 
 
 ;
-// .controller('performanceVisualizationCtrl', ['$scope','$http',function($scope,$http){
-
-        
-//         $http({
-//           method: 'GET',
-//           url: 'Batting/visualizations/performanceData.json'
-//         }).then(function successCallback(response) {
-//             $scope.data = response.data;
-//           }, function errorCallback(response) {
-//                 console.log('Failed');
-//           })
-
-//         $scope.options = {
-//             chart: {
-//                 type: 'sunburstChart',
-//                 height: 450,
-//                 color: d3.scale.category20c(),
-//                 duration: 250
-//             }
-//         };
-        
-
-//     }])
-
-// ;

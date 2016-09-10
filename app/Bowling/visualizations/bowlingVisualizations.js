@@ -39,15 +39,7 @@ angular.module('careerAnalysisApp.bowling.visualizations',[
             }
         };
 
-    //     $http({
-    //       method: 'GET',
-    //       url: 'Bowling/visualizations/wicketsYoY.json'
-    //     }).then(function successCallback(response) {
-    //         $scope.data = JSON.stringify(response.data);
-    //       }, function errorCallback(response) {
-    //             console.log('Failed');
-    //       })
-    // }])
+
         $scope.data = [
     {
         area: true,

@@ -1,6 +1,5 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
 var careerAnalysisApp =angular.module('careerAnalysisApp', [
   'ngRoute',
   'duScroll',
@@ -49,7 +48,6 @@ var careerAnalysisApp =angular.module('careerAnalysisApp', [
                 offsetTop = parent.offset().top - topPadding;
                 if ($win.scrollTop() >= offsetTop) {
                     element.addClass(topClass);
-                    //parent.height(element.height());
                 } else {
                     element.removeClass(topClass);
                     parent.css("height", null);

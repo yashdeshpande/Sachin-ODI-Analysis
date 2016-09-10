@@ -38,11 +38,7 @@ body {
 
 body {
     font-family: 'Raleway', sans-serif;
-    /*font-family: 'Roboto Slab', serif;*/
-    /*font-family: 'Titillium Web', sans-serif;*/
-    /*font-family: 'Indie Flower', cursive;*/
-    /*font-family: 'Dosis', sans-serif;*/
-    /*font-family: 'Poiret One', cursive;*/
+
 }
 
 .tendulkarHomePageImageContainer {
@@ -149,16 +145,6 @@ background: rgba(0,0,0,0.3)
 .analysisHeader{
 padding-top:120px;
 }
-/*sylish-portfolio.css*/
-
-/*!
- * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-/* Global Styles */
-
 
 
 .introText {
