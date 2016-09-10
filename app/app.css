@@ -110,6 +110,10 @@ body {
     width:100%;
     min-height:130px;
     vertical-align: middle;
+
+}
+.navigationPanel-item object{
+    pointer-events: none;
 }
 
 .navigationPanel-item {

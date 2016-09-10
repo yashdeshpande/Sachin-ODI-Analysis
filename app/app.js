@@ -33,9 +33,6 @@ var careerAnalysisApp =angular.module('careerAnalysisApp', [
           $document.scrollToElementAnimated(analysisPanelById,0);
         }
       
-  
-  	//console.log($scope.activeView);
-
 
 }])
 .directive('setClassWhenAtTop', function ($window) {var $win = angular.element($window);
@@ -49,9 +46,6 @@ var careerAnalysisApp =angular.module('careerAnalysisApp', [
                 offsetTop;
 
             $win.on("scroll", function () {
-                // dynamic page layout so have to recalculate every time;
-                // take offset of parent because after the element gets fixed
-                // it now has a different offset from the top
                 offsetTop = parent.offset().top - topPadding;
                 if ($win.scrollTop() >= offsetTop) {
                     element.addClass(topClass);
@@ -63,20 +57,5 @@ var careerAnalysisApp =angular.module('careerAnalysisApp', [
             });
         }
     };});
-
-
-// .directive('setClassWhenAtTop',function($scope,$window){
-
-// 	return:{
-// 		link:function(){
-// 			scrollTop
-
-// 		},
-// 		restrict: 'A'
-// 	}	
-
-// })
-
-
 
 

@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="careerAnalysisApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="careerAnalysisApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="careerAnalysisApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="careerAnalysisApp" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
@@ -20,17 +17,6 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-
-
-    <!-- Header -->
-<!--     <header id="top" class="header">
-        <div class="introText">
-            <h1>Sachin Tendulkar</h1>
-            <h3>Free Bootstrap Themes &amp; Templates</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Analysis</a>
-        </div>
-    </header> -->
 
     <aside class="tendulkarHomePageImageContainer">
         <div class="tendulkarHomePage">
@@ -55,10 +41,6 @@
         <!-- /.container -->
     </section>
 
-        <!-- Callout -->
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <div ng-controller="analysisPanelController">
     <div>
       <div class="fullWidth" padding-when-at-top="0" set-class-when-at-top="fix-to-top">
@@ -69,7 +51,7 @@
                     <div class="row" du-scrollspy="navigationPanelScrollSpy">
                     <div id="navSelect" du-smooth-scroll ng-click="activeView=views[0]; toAnalysisPanel()" href="#battinggridvisualizations">
                         <div class="col-md-3 col-sm-6 navigationPanel-item">
-                                <object type ="image/svg+xml" data="img/batting.svg"></object>
+                                <object href="#battinggridvisualizations" type ="image/svg+xml" data="img/batting.svg"></object>
                                 <h4>
                                     <strong>Batting Analysis</strong>
                                 </h4>
@@ -77,7 +59,7 @@
                         </div>
                         <div id="navSelect" ng-click="activeView=views[1]; toAnalysisPanel()" href="#bowlinggridvisualizations">
                         <div class="col-md-3 col-sm-6 navigationPanel-item">
-                                <object type ="image/svg+xml" data="img/bowingIcon.svg"></object>
+                                <object href="#bowlinggridvisualizations" type ="image/svg+xml" data="img/bowingIcon.svg"></object>
                                 <h4>
                                     <strong>Bowling Analysis</strong>
                                 </h4>
@@ -86,7 +68,7 @@
                         <div id="navSelect" ng-click="activeView=views[2]; toAnalysisPanel()" href="#fieldinggridvisualizations">
                         <div class="col-md-3 col-sm-6 navigationPanel-item">
                             
-                                <object type ="image/svg+xml" data="img/fielding.svg"></object>
+                                <object href="#fieldinggridvisualizations" type ="image/svg+xml" data="img/fielding.svg"></object>
                                 <h4>
                                     <strong>Fielding Analysis</strong>
                                 </h4>
@@ -96,7 +78,7 @@
                         <div id="navSelect" ng-click="activeView=views[3]; toAnalysisPanel()" href="#worldcugridvisualizations">
                         <div class="col-md-3 col-sm-6 navigationPanel-item">
                             
-                                <object type ="image/svg+xml" data="img/worldCup.svg"></object>
+                                <object href="#battinggridvisualizations" type ="image/svg+xml" data="img/worldCup.svg"></object>
                                 <h4>
                                     <strong>World Cup Analysis</strong>
                                 </h4>
@@ -141,15 +123,10 @@
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
 
-
-
-      <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
   <script type="text/javascript" src='bower_components/jquery/dist/jquery.min.js'></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-    <script type="text/javascript" src='bower_components/angular-scroll/angular-scroll.min.js'></script>
+  <script type="text/javascript" src='bower_components/angular-scroll/angular-scroll.min.js'></script>
   <script type="text/javascript" src='bower_components/angular-ui-grid/ui-grid.js'></script>
   <script src="bower_components/d3/d3.js"></script>
   <script src="bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
