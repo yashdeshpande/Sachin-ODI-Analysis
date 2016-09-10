@@ -3,36 +3,39 @@ angular.module('careerAnalysisApp.batting.visualizations',[
         'nvd3'
     ])
 
-.controller('performanceVisualizationCtrl', ['$scope','$http',function($scope,$http){
+
+//Performance Visualization.
+
+// .controller('performanceVisualizationCtrl', ['$scope','$http',function($scope,$http){
 
         
-        $http({
-          method: 'GET',
-          url: 'Batting/visualizations/performanceData.json'
-        }).then(function successCallback(response) {
-            $scope.data = response.data;
-          }, function errorCallback(response) {
-                console.log('Failed');
-          })
+//         $http({
+//           method: 'GET',
+//           url: 'Batting/visualizations/performanceData.json'
+//         }).then(function successCallback(response) {
+//             $scope.data = response.data;
+//           }, function errorCallback(response) {
+//                 console.log('Failed');
+//           })
 
-        $scope.options = {
-            chart: {
-                type: 'sunburstChart',
-                height: 450,
-                color: d3.scale.category20c(),
-                duration: 250,
-                mode:"size",
-                //showLabels:true,
-                toolTip:{
-                    contentGenerator: function(d) {
-                        return d.displayName+' '+d.size;
-                    }
-                }
-            }
-        };
+//         $scope.options = {
+//             chart: {
+//                 type: 'sunburstChart',
+//                 height: 450,
+//                 color: d3.scale.category20c(),
+//                 duration: 250,
+//                 mode:"size",
+//                 //showLabels:true,
+//                 toolTip:{
+//                     contentGenerator: function(d) {
+//                         return d.displayName+' '+d.size;
+//                     }
+//                 }
+//             }
+//         };
         
 
-    }])
+//     }])
 
 .controller('notOutController', ['$scope','$http',function($scope,$http){
 
