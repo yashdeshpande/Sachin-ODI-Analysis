@@ -3,11 +3,22 @@
 This project makes use of AngularJS and the nvd3 wrapper written on D3 to analyse Sachin Tendulkar's ODI records.
 
 
+This can be run using: 
+
+1) git clone https://github.com/yashdeshpande/Sachin-ODI-Analysis
+
+Followed by an
+
+2) npm start
+
+As of now, the JSONs bring data into the visualizations using GET requests, this is temporary and will soon be replaced by a server that computes and gives back data using API calls.
+
+
+Commented below in the file is the ReadMe for Angular-Seed a skeleton application I had started this project out with.
 
 
 
-
-# angular-seed — the seed for AngularJS apps
+<!-- # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
@@ -314,3 +325,4 @@ For more information on AngularJS please check out http://angularjs.org/
 [protractor]: https://github.com/angular/protractor
 [selenium]: http://docs.seleniumhq.org/
 [travis]: https://travis-ci.org/
+ -->
